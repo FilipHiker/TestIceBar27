@@ -7,6 +7,51 @@
       .desktop{display: flex; justify-content: space-evenly; border: solid 1px gray;}
       .center {margin: auto; padding: 10px;}
       .content {max-width: 1800px; margin: auto; text-align: center;}
+      .btn-roll {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;}
+      .btn-roll:hover {background-color: #3e8e41}
+      .btn-roll:active {background-color: #3e8e41; box-shadow: 0 5px #666; transform: translateY(4px);}
+      .btn-max {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #000000;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;}
+      .btn-max:hover {background-color: #1b1b1b}
+      .btn-max:active {background-color: #1b1b1b; box-shadow: 0 5px #666; transform: translateY(4px);}
+      .btn-loop {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #000000;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;}
+      .btn-loop:hover {background-color: #1b1b1b}
+      .btn-loop:active {background-color: #1b1b1b; box-shadow: 0 5px #666; transform: translateY(4px);}
     </style>
   </head>
   <body>
@@ -22,13 +67,13 @@
           <p class="groove">WIN</p>
         </div>
           <div>
-            <button id="max-button">
+            <button class="btn-max" id="max-button">
               MAX
             </button>
-            <button id="roll-button">
+            <button class="btn-roll" id="roll-button">
               ROLL
             </button>
-            <button id="loop-button">
+            <button class="btn-loop" id="loop-button">
               LOOP
             </button>
           </div>

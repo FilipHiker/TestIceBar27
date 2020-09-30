@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
-    "start": "webpack-dev-server --config webpack/base.js --open"
+    "start": "webpack-dev-server --config webpack/base.js --open",
+    "lint": "eslint ./src/*.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,9 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "eslint": "^7.10.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "events": "^3.2.0",
     "phaser": "^3.20.1",
     "pixi.js": "^5.3.3"
   }
